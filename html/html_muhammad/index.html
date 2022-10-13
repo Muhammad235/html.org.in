@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Dsky Solution v1.0.0" />
+    <meta property="og:title" content="HTML Formatting | A open source project 💖" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="description" content="HTML.ORG.IN A free platform for html learning " />
+    <meta property="og:description" content="HTML.ORG.IN A free platform for html learning " />
+    <link rel="canonical" href="https://html.org.in/" />
+    <meta property="og:url" content="https://html.org.in/" />
+    <meta property="og:site_name" content="html.org.in for html learner" />
+    <meta property="og:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
+    <meta property="twitter:title" content="html.org.in for html learner" />
+    <meta name="twitter:site" content="@diptenusarkar" />
+    <title>HTML Formatting | A open source project 💖</title>
+
+    <!-- !Stylesheet -->
+    <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
+    <link rel="stylesheet" href="../../Website/Style/vender/css/prism.css">
+    <link rel="stylesheet" href="../../Website/Style/vender/css/video-play.css" />
+
+    <!-- media query screen  -->
+    <link rel="stylesheet" type="text/css" media="(max-width: 320px)" href="../../media/media320.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 375px)" href="../..media/media375.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 425px)" href="../..media/media425.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 768px)" href="../..media/media768.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
+
+    <main class="main">
+        <div class="navigation-link">
+            <a href="../html_styles/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_comments/">Next <i class="bi bi-chevron-double-right"></i></a>
+        </div>
+
+        <div class="htmlpost__box">
+            <h1>HTML TRICKS &#128204;</h1>
+            <hr>
+            <p class="htmlpost__hr-p">
+                There are some uncommon html tags and attributes which i think you should know
+            </p>
+            <hr>
+            <h2>Let get started</h2>
+
+            <p>Sometimes you might want to disabe the users from right clicking a portion of your web page or the whole web page, this can be done using html only</p>
+
+            <h3>=> &lt;body oncontextmenu="return false"&gt;  &lt;/body&gt; </h3> 
+            <p>Insert the oncontextmenu attribute to the body of your webpage to disable right click on the entire web page</p>
+            
+            <br>
+
+            <h3>=> &lt;section oncontextmenu="return false"&gt;  &lt;/section&gt; </h3> 
+
+            <p>This is use to disable right click on the this portion of the web page 
+                i.e the content in this section tag (right click is disabled) 
+            </p>
+            <br>
+            <h2>To create an accordion in html or a small hide section of information</h2>
+
+            <pre class="language-html">
+            <code>
+            <h3>&lt;details&gt;
+            &lt;summary&gt; View Frequently &lt;/summary&gt;
+                    &lt;ul&gt;
+                    &lt;li>Question 1&lt;/li&gt;
+                    &lt;li>Question 2&lt;/li&gt;
+                    &lt;li>Question 3&lt;/li&gt;
+                    &lt;li>Question 4&lt;/li&gt;
+                    &lt;/ul&gt;
+            &lt;/details&gt;</h3> 
+            </code>
+            </pre>
+
+            <h2>The output of the above code </h2>
+
+
+            <h3>
+                <details>
+                    <summary>View Frequently</summary>
+                    <ul>
+                        <li>Question 1</li>
+                        <li>Question 1</li>
+                        <li>Question 1</li>
+                        <li>Question 1</li>
+                    </ul>
+                </details>
+            </h3>  
+
+            <h2>For user who are on <mark>mobile</mark> devices, you can use the &lt;input/&gt; with a capture attribute to open the user's cameras and allow them to take a photo or video to upload to your website!</h2>
+
+
+<pre class="language-html">
+    <code>
+    <h3>
+    &lt;input type="file" id="user" capture="user" accept="image/*"/&gt;  This will open the users camera on mobile devices it can be used to campture the user and environment 
+           
+    &lt;input type="file" id="environment" capture="environment" accept="video/*"/&gt; This will open the users camera on mobile devices it can be used to for the purpose of video only 
+    </h3> 
+    </code>
+</pre>
+
+        <h3>The input tag with the "user" attribute and "image/*"</h3>
+        <p>This will open the users camera on mobile devices it can be used to campture the user and environment</p>
+
+        <h3>The input tag with the "environment" attribute and "video/*"</h3> <p>          This will open the users camera on mobile devices it can be used to video the user environment only</p>
+
+        
+        <h2>Let make a simple tip calculator using HTML</h2>
+<pre class="language-html">
+    <code>
+    <h3>
+    &lt;form oninput="total.value=Number(amount.value) + (Number(amount.value) + Number(tip.value)/ 100)">
+            &lt;input type="number" id="amount"  value="0"/&gt; +
+            &lt;input type="number" id="tip"  value="0"/&gt; =
+            &lt;output name="total" for="amount tip"/&gt; &lt;output&gt;
+    &lt;/form&gt;
+    </h3> 
+    </code>
+</pre>   
+
+    <h3>The output of the tip calculator</h3>
+    <form oninput="total.value=Number(amount.value) + (Number(amount.value) + Number(tip.value)/ 100)">
+        <input type="number" id="amount"  value="0"> +
+        <input type="number" id="tip"  value="0"/> =
+        <output name="total" for="amount tip"> </output> 
+
+      </form>
+
+
+            <h2>Now It's your time to implement them.</h2>
+        </div>
+
+        <div class="navigation-link">
+            <a href="../html_styles/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_comments/">Next <i class="bi bi-chevron-double-right"></i></a>
+        </div>
+    </main>
+
+    <div include-html="../../include/footer.html" id="footer_file"></div>
+    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="../../Website/JavaScript/include-html.min.js"></script>
+
+    <script src="../../Website/Style/vender/js/prism.js"></script>
+    <script src="../../Website/app.js"></script>
+    <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
+</body>
+
+</html>
